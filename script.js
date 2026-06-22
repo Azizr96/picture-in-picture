@@ -5,8 +5,12 @@ const buttonElement = document.getElementById('button');
 
 async function selectMediaStream(){
   try{
-
+    const mediaStream = await navigator.mediaDevices.getDisplayMedia();
   } catch (error){
     // Catch Error Here
   }
 }
+
+// on load
+
+selectMediaStream();
